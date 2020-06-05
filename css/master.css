@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*  MACROSTRUTTURA GRID  TEST*/
+.container-grid {
+  display: grid;
+  grid-template-columns: 270px 1fr 1fr 1fr;
+  grid-template-rows: 90px 1fr 90px;
+  grid-template-areas:
+    "header header header header"
+    "sidebar body body body"
+    "footer footer footer footer"
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+
+}
+
+aside {
+  grid-area: sidebar;
+  height: calc(100vh - 180px);
+  background-color: red;
+}
+
+main {
+  grid-area: body;
+  height: 100%;
+  background-color: purple;
+
+}
+
+footer {
+  grid-area: footer;
+  background-color: grey;
+}
