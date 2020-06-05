@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /*  MACROSTRUTTURA GRID  TEST*/
 .container-grid {
@@ -11,21 +15,21 @@
   grid-template-columns: 270px 1fr 1fr 1fr;
   grid-template-rows: 90px 1fr 90px;
   grid-template-areas:
-    "header header header header"
+    "sidebar header header header"
     "sidebar body body body"
     "footer footer footer footer"
 }
 
 header {
   grid-area: header;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
 
 }
 
 aside {
   grid-area: sidebar;
-  height: calc(100vh - 180px);
-  background-color: red;
+  height: calc(100vh - 90px);
+  background-color: black;
 }
 
 main {
@@ -38,4 +42,52 @@ main {
 footer {
   grid-area: footer;
   background-color: grey;
+}
+
+/* HEADER */
+
+.container-flex-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1%;
+  height: 90px;
+}
+
+
+#gopremium a {
+  border: solid 1px white;
+  border-radius: 50px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* aside */
+
+.container-flex-navbar {
+  display: flex;
+  padding-left: 5%;
+  height: 100%;
+  align-items: center;
+}
+
+#navbar-top .logo img {
+  height: 90px;
+  max-width: 65%;
+}
+
+#navbar-top .prettypicture  {
+  height: 30px;
+  padding-right: 5px;
+}
+
+#navbar-top div a {
+  color: grey;
+}
+
+#navbar-top div {
+  padding-top: 10px;
 }
