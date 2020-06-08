@@ -8,7 +8,9 @@ a {
   text-decoration: none;
 }
 
-
+.centratura {
+  padding: 0 1%;
+}
 /*  MACROSTRUTTURA GRID  TEST*/
 .container-grid {
   display: grid;
@@ -35,7 +37,7 @@ aside {
 main {
   grid-area: body;
   height: 100%;
-  background-color: purple;
+  background-color: #1a252f;
 
 }
 
@@ -129,4 +131,57 @@ aside a {
 #accountname img {
   height: 20px;
   padding-right: 10px;
+}
+
+/* MAIN */
+
+/*  navbar main */
+
+#navbar-main {
+  text-align: center;
+  padding-top: 15px;
+}
+
+#navbar-main ul li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+#navbar-main a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* recently played */
+
+#recplay h2 {
+  padding: 20px 0;
+  color: white;
+  font-size: 2em;
+}
+.container-flex-recplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+
+}
+.card {
+  text-align: center;
+  padding-right: 15px;
+  width: calc(100% / 6)
+}
+
+
+.card h3 {
+  color: white;
+}
+
+.card img {
+  max-width: 200px;
+  height: auto;
+}
+
+.card p {
+  color: grey;
 }
