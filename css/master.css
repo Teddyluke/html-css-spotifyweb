@@ -66,12 +66,33 @@ footer {
 
 
 /* aside */
+aside a {
+  color: grey;
+}
+
+/* regole container flex */
+.container-flex-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .container-flex-navbar {
   display: flex;
   padding-left: 5%;
-  height: 100%;
   align-items: center;
+}
+
+.container-flex-accountname {
+  display: flex;
+  padding-left: 5%;
+  align-items: center;
+}
+
+/* sezione navbar top */
+
+#navbar-top, #accountname {
+  overflow: auto;
 }
 
 #navbar-top .logo img {
@@ -84,10 +105,28 @@ footer {
   padding-right: 5px;
 }
 
-#navbar-top div a {
-  color: grey;
-}
-
 #navbar-top div {
   padding-top: 10px;
+}
+
+#navbar-top h3 {
+  color: white;
+  padding-left: 5%;
+  padding-top: 20px;
+}
+
+.fa-plus-square {
+  font-size: 3em;
+  padding-right: 10px;
+}
+
+#navbar-top ul li {
+  padding-left: 5%;
+  padding-top: 10px;
+}
+
+/* sezione accountname */
+#accountname img {
+  height: 20px;
+  padding-right: 10px;
 }

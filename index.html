@@ -5,18 +5,21 @@
     <title>Spotifyweb</title>
     <link rel="stylesheet" href="css/master.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/d4368e456d.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <div class="container-grid">
+
       <!-- header -->
       <header>
         <section class="container-flex-header" id="gopremium">
             <a href="#">EFFETTUA L'UPGRADE</a>
         </section>
       </header>
+
       <!--  barra laterale sinistra -->
-      <aside>
+      <aside class="container-flex-aside">
         <section  id="navbar-top" >
           <div class="container-flex-navbar">
             <a class="logo" href="#"><img src="img/logo.svg" alt="logo"></a>
@@ -31,13 +34,35 @@
           </div>
           <div class="container-flex-navbar">
             <img class="prettypicture" src="img/libreria.svg" alt="libreria">
-            <a href="#">La mia libreria</a>
+            <a href="#">La tua libreria</a>
           </div>
-
+          <!-- playlist -->
+          <h3>PLAYLIST</h3>
+          <div class="container-flex-navbar">
+            <a href="#"><i class="fas fa-plus-square"></i></a>
+            <a href="#">Crea playlist</a>
+          </div>
+          <ul>
+            <li> <a href="#">Nome Playlist</a> </li>
+            <li> <a href="#">Nome Playlist</a> </li>
+            <li> <a href="#">Nome Playlist</a> </li>
+            <li> <a href="#">Nome Playlist</a> </li>
+            <li> <a href="#">Nome Playlist</a> </li>
+            <li> <a href="#">Nome Playlist</a> </li>
+            <li> <a href="#">Nome Playlist</a> </li>
+          </ul>
         </section>
-
-        <section class="container-flex-library">
-
+        <!-- piè di pagina aside -->
+        <section id="accountname">
+          <div class="container-flex-accountname">
+            <img src="img/download.svg" alt="download">
+            <a href="#">installa app</a>
+          </div>
+          <hr>
+          <div class="container-flex-accountname">
+            <img src="img/profile.svg" alt="profile">
+            <a href="#">TeddyLuke</a>
+          </div>
         </section>
 
       </aside>
