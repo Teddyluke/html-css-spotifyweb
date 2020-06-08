@@ -21,6 +21,7 @@ a {
 
 .flexmerdbox {
   display: flex;
+  height: 100vh;
 }
 
 /* regole header */
@@ -207,6 +208,88 @@ padding-top: 90px;
 /*  regole sezione footer */
 footer {
   height: 90px;
-  background-color: darkgrey;
+  background-color: #3a3a3a;
   width: 100%;
+  position: fixed;
+  align-self: flex-end;
+}
+
+.flexbox-player {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  lato sinistro  */
+.flexbox-playnow {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.flexbox-playnow img {
+  width: 50px;
+  padding-left: 8px;
+}
+.flexbox-playnow h3 {
+  font-size: 1em;
+  color: white;
+  padding: 0 10px;
+}
+
+.flexbox-playnow p, .flexbox-playnow i {
+  color: grey;
+  padding: 0 10px;
+}
+
+.flexbox-playnow i:first-of-type {
+  padding-left: 20px;
+}
+
+
+/* player centrale */
+#player {
+  width: 60%;
+}
+#player .flexbox-player {
+  align-items: center;
+  justify-content:  center;
+}
+
+#player a i {
+  color: white;
+  padding: 15px;
+}
+
+#player .playbutton {
+  font-size: 2em;
+}
+
+#player .barraplayvuota {
+  border: 2.5px solid grey;
+  width: 50%;
+  border-radius: 5px;
+  margin: 0 20px;
+  position: relative;
+}
+
+#player .barraplaypiena {
+  position: absolute;
+  border: 2.5px solid white;
+  width: 25%;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  transform: translate(-5%,-50%);
+}
+
+#player p {
+  color: white;
+  font-weight: bold;
+}
+
+/*  lato sx */
+.flexbox-volumeup {
+  display: flex;
+  align-items: center;
+  height: 90px;
 }
