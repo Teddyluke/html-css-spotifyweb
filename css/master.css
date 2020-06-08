@@ -202,3 +202,11 @@ padding-top: 90px;
 #popular img {
   border-radius: 50%;
 }
+
+
+/*  regole sezione footer */
+footer {
+  height: 90px;
+  background-color: darkgrey;
+  width: 100%;
+}
