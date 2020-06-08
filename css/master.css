@@ -6,58 +6,45 @@
 
 a {
   text-decoration: none;
+  color: grey;
 }
 
 .centratura {
   padding: 0 1%;
 }
-/*  MACROSTRUTTURA GRID  TEST*/
-.container-grid {
-  display: grid;
-  grid-template-columns: 270px 1fr 1fr 1fr;
-  grid-template-rows: 90px 1fr 90px;
-  grid-template-areas:
-    "sidebar header header header"
-    "sidebar body body body"
-    "footer footer footer footer"
+
+.titolisezione {
+  padding: 20px 0;
+  color: white;
+  font-size: 2em;
 }
 
-header {
-  grid-area: header;
+.flexmerdbox {
+  display: flex;
+}
+
+/* regole header */
+
+#header-fixed-top {
   background-color: rgba(0, 0, 0, 0.9);
-
+  position: fixed;
+  width: 100%;
 }
 
-aside {
-  grid-area: sidebar;
-  height: calc(100vh - 90px);
-  background-color: black;
-}
-
-main {
-  grid-area: body;
-  height: 100%;
-  background-color: #1a252f;
-
-}
-
-footer {
-  grid-area: footer;
-  background-color: grey;
-}
-
-/* HEADER */
-
-.container-flex-header {
+.flex-header {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0 1%;
   height: 90px;
 }
 
+#header-fixed-top .logo img {
+  height: 90px;
+  max-width: 65%;
+}
 
-#gopremium a {
+.gopremium  {
   border: solid 1px white;
   border-radius: 50px;
   padding: 10px 30px;
@@ -67,17 +54,22 @@ footer {
 }
 
 
-/* aside */
-aside a {
-  color: grey;
+/* regole aside */
+
+aside {
+  height: calc(100vh - 90px);
+  width: 270px;
+  background-color: black;
+  padding-top: 90px;
 }
 
-/* regole container flex */
 .container-flex-aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* sezione navbar top */
 
 .container-flex-navbar {
   display: flex;
@@ -85,21 +77,9 @@ aside a {
   align-items: center;
 }
 
-.container-flex-accountname {
-  display: flex;
-  padding-left: 5%;
-  align-items: center;
-}
 
-/* sezione navbar top */
-
-#navbar-top, #accountname {
+#navbar-top {
   overflow: auto;
-}
-
-#navbar-top .logo img {
-  height: 90px;
-  max-width: 65%;
 }
 
 #navbar-top .prettypicture  {
@@ -128,12 +108,42 @@ aside a {
 }
 
 /* sezione accountname */
-#accountname img {
-  height: 20px;
-  padding-right: 10px;
+
+.container-flex-accountname {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
 }
 
+
+#accountname img {
+  height: 20px;
+  width: 20px;
+}
+
+#accountname div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#accountname a {
+  padding-left: 5px;
+}
+
+.profileimg {
+  background-color: grey;
+  border-radius: 50%;
+}
+
+
 /* MAIN */
+main {
+background-color: #1a252f;
+height: calc(100vh - 90px);
+width: 100%;
+overflow: auto;
+padding-top: 90px;
+}
 
 /*  navbar main */
 
@@ -154,34 +164,41 @@ aside a {
 
 /* recently played */
 
-#recplay h2 {
-  padding: 20px 0;
-  color: white;
-  font-size: 2em;
-}
+
 .container-flex-recplay {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 100%;
 
 }
+
+/* regole cards */
 .card {
-  text-align: center;
   padding-right: 15px;
-  width: calc(100% / 6)
 }
 
+.card img {
+ max-width: 180px;
+}
 
 .card h3 {
   color: white;
 }
 
-.card img {
-  max-width: 200px;
-  height: auto;
-}
 
 .card p {
   color: grey;
+}
+
+
+/*  regole sezione foryou */
+#foryou p, #popular p {
+  color: grey;
+  padding-bottom: 20px;
+}
+
+
+/* regole sezione popular */
+#popular img {
+  border-radius: 50%;
 }

@@ -9,21 +9,19 @@
   </head>
 
   <body>
-    <div class="container-grid">
+    <div class="flexmerdbox">
 
-      <!-- header -->
+      <!--  header fixed top con logo e upgrade -->
       <header>
-        <section class="container-flex-header" id="gopremium">
-            <a href="#">EFFETTUA L'UPGRADE</a>
+        <section id="header-fixed-top" class="flex-header">
+          <a class="logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+          <a class="gopremium" href="#">EFFETTUA L'UPGRADE</a>
         </section>
       </header>
 
-      <!--  barra laterale sinistra -->
+      <!-- aside  -->
       <aside class="container-flex-aside">
         <section  id="navbar-top" >
-          <div class="container-flex-navbar">
-            <a class="logo" href="#"><img src="img/logo.svg" alt="logo"></a>
-          </div>
           <div class="container-flex-navbar">
             <img class="prettypicture" src="img/home.svg" alt="home">
             <a href="#">Home</a>
@@ -60,12 +58,12 @@
           </div>
           <hr>
           <div class="container-flex-accountname">
-            <img src="img/profile.svg" alt="profile">
+            <img class="profileimg" src="img/profile.svg" alt="profile">
             <a href="#">TeddyLuke</a>
           </div>
         </section>
-
       </aside>
+
 
       <main>
         <!-- navbar main -->
@@ -82,7 +80,7 @@
 
         <!-- recently played -->
         <section id="recplay" class="centratura">
-          <h2>Recently played </h2>
+          <h2 class="titolisezione">Recently played </h2>
           <div class="container-flex-recplay">
             <div class="card">
               <img src="img/metal_lifting.jpg" alt="metal">
@@ -115,14 +113,47 @@
               <p>Subtitle</p>
             </div>
           </div>
-
-
         </section>
+
+        <!-- creato per "nomeutente" -->
+        <section class="centratura" id="foryou">
+          <h2 class="titolisezione">Creato per TeddyLuke</h2>
+          <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+          <div class="container-flex-recplay">
+            <div class="card">
+              <img src="img/radar.jpeg" alt="radar">
+              <h3> Heavy metal</h3>
+              <p>Subtitle</p>
+            </div>
+            <div class="card">
+              <img src="img/mixdaily.jpeg" alt="dailymix">
+              <h3> Heavy metal</h3>
+              <p>Subtitle</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- artisti più popolari -->
+        <section class="centratura" id="popular">
+          <h2 class="titolisezione">Artisti più popolari</h2>
+          <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+          <div class="container-flex-recplay">
+            <div class="card">
+              <img src="img/youg.jpeg" alt="youg">
+              <h3> Heavy metal</h3>
+              <p>Subtitle</p>
+            </div>
+            <div class="card">
+              <img src="img/einaudi.jpeg" alt="einaudi">
+              <h3> Heavy metal</h3>
+              <p>Subtitle</p>
+            </div>
+          </div>
+        </section>
+
       </main>
 
-      <footer>
-
-      </footer>
     </div>
+
   </body>
 </html>
