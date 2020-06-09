@@ -30,6 +30,7 @@ a {
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   width: 100%;
+  z-index: 9000;
 }
 
 .flex-header {
@@ -174,12 +175,14 @@ padding-top: 90px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
 }
 
 /* regole cards */
 .card {
-  padding-right: 15px;
+  margin-right: 40px;
+  text-align: center;
+  flex-shrink: 2;
+  flex-basis: 180px;
 }
 
 .card img {
@@ -195,8 +198,46 @@ padding-top: 90px;
   color: grey;
 }
 
+/*  layover cards */
+.layoverwrap {
+  position: relative;
+}
+
+.layover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  display: none;
+}
+
+.layover2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 50px;
+  transform: translate(-50% , -50%);
+}
+
+.layoverround {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  display: none;
+  border-radius: 50%;
+}
+
 
 /*  regole sezione foryou */
+.container-flex-foryou {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
 #foryou p, #popular p {
   color: grey;
   padding-bottom: 20px;
@@ -352,4 +393,21 @@ footer {
     height: 35px;
     width: auto;
   }
+
+}
+
+/* EFFETTI OVER E CO.  */
+
+a:hover {
+  color: white;
+}
+
+#navbar-main li a:hover {
+  border-bottom: 2px solid #00ff19;
+  color: white;
+}
+
+.layoverwrap:hover .layover, .layoverwrap:hover .layoverround {
+  display: block;
+  cursor: pointer;
 }
