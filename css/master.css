@@ -57,6 +57,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: white;
+  transition: padding 2s;
 }
 
 
@@ -367,6 +368,21 @@ footer {
   transform: translate(-5%,-50%);
 }
 
+.flexbox-volumeup .circle2 {
+  position: absolute;
+  color: white;
+  left: 20%;
+  transform: translate(-50% , -50%);
+  display: none;
+}
+
+#player .flexbox-player .circle1 {
+  position: absolute;
+  color: white;
+  left: 25%;
+  transform: translate(-50% , -50%);
+  display: none;
+}
 
 /* MEDIA QUERY */
 
@@ -409,5 +425,34 @@ a:hover {
 
 .layoverwrap:hover .layover, .layoverwrap:hover .layoverround {
   display: block;
+  cursor: pointer;
+}
+
+.gopremium:hover {
+  padding: 20px 40px;
+}
+
+#player .barraplayvuota:hover .barraplaypiena{
+  border-color: #00ff19;
+  cursor: pointer;
+}
+
+.barraplayvuota2:hover .barraplaypiena2{
+  border-color: #00ff19;
+  cursor: pointer;
+}
+
+#player .barraplayvuota:hover .circle1 {
+  display: block;
+  cursor: pointer;
+}
+
+.barraplayvuota2:hover .circle2 {
+  display: block;
+  cursor: pointer;
+}
+
+.mediaflex i:hover {
+  color: white;
   cursor: pointer;
 }
