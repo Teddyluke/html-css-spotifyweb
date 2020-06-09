@@ -45,6 +45,10 @@ a {
   max-width: 65%;
 }
 
+#header-fixed-top .logomini img {
+  display: none;
+}
+
 .gopremium  {
   border: solid 1px white;
   border-radius: 50px;
@@ -220,6 +224,10 @@ footer {
 }
 
 /*  lato sinistro  */
+.playnow {
+  width: 20%;
+}
+
 .flexbox-playnow {
   display: flex;
   align-items: center;
@@ -236,15 +244,15 @@ footer {
   padding: 0 10px;
 }
 
-.flexbox-playnow p, .flexbox-playnow i {
+.flexbox-playnow p {
   color: grey;
   padding: 0 10px;
 }
 
-.flexbox-playnow i:first-of-type {
+.mediaflex {
+  color: grey;
   padding-left: 20px;
 }
-
 
 /* player centrale */
 #player {
@@ -292,4 +300,56 @@ footer {
   display: flex;
   align-items: center;
   height: 90px;
+}
+
+.flexbox-volumeup a i {
+  padding-right: 15px;
+  color: white;
+}
+
+.barraplayvuota2 {
+  border: 2.5px solid grey;
+  width: 150px;
+  border-radius: 5px;
+  margin: 0 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.barraplaypiena2 {
+  position: absolute;
+  border: 2.5px solid white;
+  width: 25%;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  transform: translate(-5%,-50%);
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+  aside {
+    width: 50px;
+  }
+  aside img {
+    margin-left: 5px;
+  }
+  #playlist {
+    display: none;
+  }
+  #navbar-top a, #accountname a {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #header-fixed-top .logomini img {
+    display: block;
+    height: 35px;
+    width: auto;
+  }
 }
